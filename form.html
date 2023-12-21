@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/icon.css">
+  </head>
+  <body class="body">
+    <div class="container chat">
+      <button class="chat__button">
+        <svg class="chat__icon">
+          <use href="./images/symbol-defs.svg#icon-chat"></use>
+        </svg>
+      </button>
+    </div>
+    <header class="header">
+      <div class="container">
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+              <li class="header-nav__item">
+                  <a class="header-nav__link" href="">Home</a>
+              </li>
+              <li class="header-nav__item">
+                  <a class="header-nav__link" href="">About</a>
+              </li>
+              <li class="header-nav__item">
+                  <a class="header-nav__link" href="">Blog</a>
+              </li>
+              <li class="header-nav__item">
+                  <a class="header-nav__link  header-nav__link_active" href="./form.html">Contact</a>              
+              </li>
+              <li class="header-nav__item header-nav__item_logo">
+                  <a class="header-nav__link" href="./index.html">
+                      <img class="header-nav__item" src="./images/Logo.svg" width="260" height="28" alt="Logo">
+                  </a>
+              </li>
+              <li class="header-nav__item">
+                  <a class="header-nav__link" href="">Use cases</a>
+              </li>
+              <li class="header-nav__item">
+                  <a class="header-nav__link" href="./position.html">Solutions</a>
+              </li>
+              <li class="header-nav__item">
+                  <a class="header-nav__link" href="./background.html">bg master</a>
+              </li>
+          </ul>
+      </nav>
+     </div>
+    </header>
+    <main class="main">
+      <section class="contact">
+        <div class="contact-background"></div>
+        <div class="container">
+          <div class="contact__content">
+            <div class="contact__description">
+              <h1 class="title-h1 contact__titel">Get in touch today</h1>
+              <p class="text contact__text">Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu dolorol egestas morbi sem vulputate etiam facilisis pellentesque ut quis.</p>
+            </div>
+              <form id="contacts-form" autocomplete="off" novalidate class="contact__form">
+                <div class="contact__row">
+                  <label class="contact__label" for="name">Name</label>
+                  <input class="contact__input" type="text" required name="name" id="name" placeholder="example@email.com">
+                </div>
+                <div class="contact__row">
+                  <label class="contact__label" for="email">Email</label>
+                  <input class="contact__input" type="email" required name="email" id="email" placeholder="example@email.com">
+                </div>
+                <div class="contact__row">
+                  <label class="contact__label" for="phone">Phone</label>
+                  <input class="contact__input" type="tel" required name="phone" id="phone" placeholder="(123) 456 - 789">
+                </div>
+                <div class="contact__row">
+                  <label class="contact__label" for="company">Company</label>
+                  <input class="contact__input" type="text" required name="company" id="company" placeholder="Facebook">
+                </div>
+                <div class="contact__row">
+                  <label class="contact__label" for="message">Leave us a message</label>
+                  <textarea class="contact__textarea" rows="5" cols="45" name="message" id="message" placeholder="Please type your message here..."></textarea>
+                </div>
+                  <button type="submit" class="button button__primary contact__button">Send message</button>
+              </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+          <div class="footer__contant">
+            <p class="text footer__text">Copyright &copy;2023 BRIX Templates</p>
+            <p class="text footer__text">All Rights Reserved
+              <a class="link footer__link"  href=""> |Terms and Conditions </a>
+              <a class="link footer__link"  href=""> |Privacy Policy </a></p>
+          </div>
+        </div>
+      </footer> 
+</body>
+</html>
